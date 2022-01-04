@@ -11,7 +11,7 @@ module.exports = function toReadable(n) {
     if (n < 20) return num[n];
     var digit = n % 10;
     if (n < 100)
-        return tens[~~(n / 10) - 2] + (digit ? "-" + num[digit] : "");
+        return tens[~~(n / 10) - 2] + (digit ? " " + num[digit] : "");
     if (n < 1000)
         return (
             num[~~(n / 100)] +
